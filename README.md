@@ -1,3 +1,49 @@
+Medication Management System
+This is a full-stack Medication Management application built with React (Frontend) and Node.js + SQLite (Backend).
+
+✨ Features
+🔐 User Authentication (Signup/Login)
+
+💊 Medication Tracking (Add, view, mark as taken)
+
+🗃️ SQLite Database for data storage
+
+🧑‍⚕️ Role-based Dashboard (Patient/Caretaker)
+
+🌐 Fully responsive frontend
+
+🛠️ Tech Stack
+Frontend: React, HTML, CSS, JavaScript
+
+Backend: Node.js, Express.js
+
+Database: SQLite
+
+Others: CORS, Body-Parser
+
+🚀 How to Run the Project
+🖥️ Frontend
+bash
+Copy
+Edit
+cd medication-frontend
+npm install
+npm start
+🖥️ Backend
+bash
+Copy
+Edit
+cd medication-backend
+npm install
+node server.js
+Frontend runs on: http://localhost:3000
+
+Backend runs on: http://localhost:4000
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
