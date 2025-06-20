@@ -1,23 +1,28 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
 
+
+
+import Signup from './components/Signup';
+import Login from './components/Login';
+import Dashboard from './components/Dashboard';
+
+
+
+
 function App() {
+  const [userId, setUserId] = useState(null);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="p-4">
+      {!userId ? (
+        <div className="flex gap-4">
+          <Signup onSignup={setUserId} />
+          <Login onLogin={setUserId} />
+        </div>
+      ) : (
+        <Dashboard userId={userId} />
+      )}
     </div>
   );
 }
